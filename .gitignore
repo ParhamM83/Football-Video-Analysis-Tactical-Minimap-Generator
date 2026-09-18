@@ -1,0 +1,42 @@
+# Python & Bytecode
+__pycache__/
+models/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+.env
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# YOLO & Training Artifacts
+runs/
+data/
+cache/
+*.cache
+
+# Video Outputs (Generated)
+output_video.avi
+output_*.avi
+output_*.mp4
+*.avi
+
+# IDEs & OS Files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Archives & Temporary Docs
+*.zip
+*.tar.gz
+*.pdf
