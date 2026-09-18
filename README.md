@@ -10,7 +10,7 @@ An end-to-end computer vision and deep learning pipeline that transforms single-
 
 ---
 
-## 📌 Architecture & Pipeline
+## Architecture & Pipeline
 
 ```mermaid
 flowchart TD
@@ -35,7 +35,7 @@ flowchart TD
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
 - **Multi-Class Detection & Persistent Tracking**: Custom-trained YOLOv8 detector combined with **ByteTrack** to maintain stable identities across long occlusions and dense player interactions.
 - **Unsupervised Dynamic Team Assignment**:
@@ -56,7 +56,7 @@ flowchart TD
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```text
 football-nn-main/
@@ -95,7 +95,7 @@ football-nn-main/
 
 ---
 
-## 🛠️ Installation & Setup
+## Installation & Setup
 
 ### 1. Clone Repository
 ```bash
@@ -127,7 +127,7 @@ pip install -r requirements.txt
 
 ---
 
-## 💻 Usage & CLI Reference
+## Usage & CLI Reference
 
 All workflows are controlled through `main.py`.
 
@@ -165,7 +165,7 @@ python main.py train --data ./data/football-players-detection --epochs 50 --batc
 
 ---
 
-## 🧪 Running Tests
+## Running Tests
 
 The test suite validates the mathematical foundations, homography interpolation, coordinate geometry, and team clustering logic without requiring GPU or dataset dependencies.
 
@@ -185,7 +185,7 @@ tests/test_homography.py .......        [100%]
 
 ---
 
-## ⚙️ Configuration (`config.py`)
+## Configuration (`config.py`)
 
 Global hyperparameters and default paths can be adjusted directly in [`config.py`](config.py):
 - **Hardware Acceleration**: Automatic CUDA / MPS / CPU detection.
@@ -195,7 +195,7 @@ Global hyperparameters and default paths can be adjusted directly in [`config.py
 
 ---
 
-## 📦 Pretrained Model Weights
+## Pretrained Model Weights
 
 The repository includes ready-to-use pretrained checkpoints inside the [`models/`](models/) directory:
 - **`models/player_best.pt`** (~89.5 MB): Custom YOLOv8 detector trained to detect players, goalkeepers, referees, and the football.
@@ -203,6 +203,10 @@ The repository includes ready-to-use pretrained checkpoints inside the [`models/
 
 ---
 
-## 📜 License & Academic Integrity
+## Datasets
 
-This project was developed for the **Neural Networks course** at **K. N. Toosi University of Technology (KNTU)**. It is intended for educational, research, and non-commercial sports analytics applications.
+The models were trained using the following datasets from Roboflow Universe:
+- **Football Players Detection**: [https://universe.roboflow.com/roboflow-jvuqo/football-players-detection-3zvbc](https://universe.roboflow.com/roboflow-jvuqo/football-players-detection-3zvbc)
+- **Football Field Detection**: [https://universe.roboflow.com/roboflow-jvuqo/football-field-detection-f07vi](https://universe.roboflow.com/roboflow-jvuqo/football-field-detection-f07vi)
+
+---
