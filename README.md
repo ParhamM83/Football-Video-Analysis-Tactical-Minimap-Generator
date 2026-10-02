@@ -1,11 +1,5 @@
 # Football Analytics & Tactical Minimap Generator
 
-[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
-[![YOLOv8](https://img.shields.io/badge/Ultralytics-YOLOv8-00FFFF?style=for-the-badge&logo=yolo&logoColor=black)](https://ultralytics.com/)
-[![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)](https://opencv.org/)
-[![Tests](https://img.shields.io/badge/pytest-32%20passed-brightgreen?style=for-the-badge&logo=pytest&logoColor=white)](tests/)
-
 An end-to-end computer vision and deep learning pipeline that transforms single-view football broadcast footage into tactical telemetry and a dynamic 2D bird's-eye minimap. The system detects and tracks players, goalkeepers, referees, and the ball, clusters team jerseys using unsupervised HSV feature extraction, and projects player trajectories onto a canonical football pitch model via keypoint homography and sparse optical flow compensation.
 
 ---
