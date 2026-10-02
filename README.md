@@ -99,8 +99,8 @@ football-nn-main/
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/your-username/football-analytics.git
-cd football-analytics
+git clone https://github.com/ParhamM83/Football-Video-Analysis-Tactical-Minimap-Generator.git
+cd Football-Video-Analysis-Tactical-Minimap-Generator
 ```
 
 ### 2. Create Virtual Environment
@@ -167,20 +167,9 @@ python main.py train --data ./data/football-players-detection --epochs 50 --batc
 
 ## Running Tests
 
-The test suite validates the mathematical foundations, homography interpolation, coordinate geometry, and team clustering logic without requiring GPU or dataset dependencies.
-
-Run all 32 unit tests using `pytest`:
+Run all unit tests using `pytest`:
 ```bash
 pytest tests/
-```
-
-Expected output:
-```text
-tests/test_assigner.py ..............   [ 43%]
-tests/test_geometry.py ...........      [ 78%]
-tests/test_homography.py .......        [100%]
-
-======================== 32 passed in ~1.5s ========================
 ```
 
 ---
